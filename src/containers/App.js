@@ -29,7 +29,7 @@ class App extends Component {
 }
 
 componentDidMount (){
-	fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json())
+	fetch('').then(response => response.json())
 	.then(users => this.setState({robot:users}))
 	
 }
@@ -40,7 +40,7 @@ componentDidMount (){
 		const filteredRobots = robot.filter(robot =>robot.name.toLowerCase().includes(searchField.toLowerCase()))
 		return (
 			<div className='tc'>
-				<h1 className='f2'> Pratap's Robo Friends </h1>
+				<h1 className='f2'> Team Tourist Exchange </h1>
 				<SearchBox searchChange={onSearchChange} />
 					<Scroll>
 						<ErrorBoundary>
