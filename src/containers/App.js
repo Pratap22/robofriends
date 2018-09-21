@@ -42,11 +42,11 @@ componentDidMount (){
 			<div className='tc'>
 				<h1 className='f2'> Pratap's Robo Friends </h1>
 				<SearchBox searchChange={onSearchChange} />
-				<Scroll>
-				<ErrorBoundary>
-					<CardLists robot={filteredRobots} />
-				</ErrorBoundary>
-				</Scroll>
+					<Scroll>
+						<ErrorBoundary>
+							<CardLists robot={filteredRobots} />
+						</ErrorBoundary>
+					</Scroll>
 			</div>
 		)
 	}
