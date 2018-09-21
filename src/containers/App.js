@@ -29,7 +29,7 @@ class App extends Component {
 }
 
 componentDidMount (){
-	fetch('').then(response => response.json())
+	fetch('https://textuploader.com/dvnt9').then(response => response.json())
 	.then(users => this.setState({robot:users}))
 	
 }
